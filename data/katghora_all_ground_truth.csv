@@ -1,0 +1,106 @@
+Occurrence_ID,Name,Latitude,Longitude,Target_Minerals,Deposit_Type,UNFC_Stage,Host_Rock,Auction_Status,Source
+KORB-01,Katghora Main Lithium-REE Block,22.5025,82.5428,"Lepidolite, Amblygonite, Monazite, Xenotime",LCT Complex (Lepidolite-subtype with REE),G3,Quartz-mica schist / Granite gneiss,"Auctioned (2024, Maiki South Mining)",GSI
+KORB-02,Garhatara Rare-Metal Prospect,22.528,82.561,"Lepidolite, Spodumene, Columbite-Tantalite",LCT (Lepidolite-Spodumene),G4,Biotite gneiss / Pelitic schist,Open,GSI
+KORB-03,Pali North Pegmatite Swarm,22.375,82.331,"Spodumene, Beryl, Tourmaline",LCT (Albite-Spodumene),G4,Granite contact aureole,Open,GSI
+KORB-04,Hardi Bazar Felsic Tract,22.312,82.458,"Lepidolite, Columbite, Muscovite",LCT (Mica-rich),G4,Chhotanagpur Gneiss,Open,GSI
+KORB-05,Pondi Uprora Lithium Pegmatite,22.684,82.612,"Lepidolite, Amblygonite, Beryl",LCT (Phosphate-rich),G4,Quartz-feldspar gneiss,Open,GSI
+KORB-06,Chaitma Rare-Element Pegmatite,22.589,82.492,"Spodumene, Muscovite, Columbite",LCT (Spodumene-subtype),G4,Metasediments,Open,GSI
+KORB-07,Dipka North Ridge Occurrence,22.355,82.525,"Lepidolite, Tourmaline, Apatite",LCT (B-rich greisenized),G4,Mica schist / Amphibolite,Open,GSI
+KORB-08,Tan River Basin Pegmatite,22.615,82.385,"Spodumene, Lepidolite, Cassiterite",LCT Complex,G4,Granite gneiss,Open,GSI
+KORB-09,Korba Granite Marginal Zone,22.42,82.68,"Columbite-Tantalite, Beryl, Monazite",NYF/LCT Hybrid (REE-enriched),G4,Peraluminous S-type granite,Open,GSI
+KORB-10,Kartala South Pegmatite Cluster,22.285,82.715,"Lepidolite, Amblygonite, Fluorite",LCT (Lepidolite-subtype),G4,Migmatite / Calc-granulite,Open,GSI
+BRS-01,Katghora Outcrop BR-1 (Leucogranite),22.5269,82.5516,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-02,Katghora Outcrop BR-2 (Leucogranite),22.5268,82.5533,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-03,Katghora Outcrop BR-3 (Leucogranite),22.5271,82.5546,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-04,Katghora Outcrop BR-4 ( Leucogranite),22.5278,82.5565,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample ( Leucogranite),G3, Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-05,Katghora Outcrop BR-5 (Leucogranite),22.5286,82.5591,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-06,Katghora Outcrop BR-6 (Leucogranite),22.5281,82.5612,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-07,Katghora Outcrop BR-7 (Leucogranite),22.5275,82.5632,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-08,Katghora Outcrop BR-8 (Leucogranite),22.527,82.5656,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-09,Katghora Outcrop BR-9 (Leucogranite),22.5272,82.5682,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-10,Katghora Outcrop BR-10 (Granitic pegmatite),22.5273,82.5714,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Granitic pegmatite),G3,Granitic pegmatite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-11,Katghora Outcrop BR-11 (Leucogranite),22.5268,82.5725,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-12,Katghora Outcrop BR-12 (Granitic pegmatite),22.5269,82.5747,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Granitic pegmatite),G3,Granitic pegmatite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-13,Katghora Outcrop BR-13 (Granitic pegmatite),22.5278,82.5778,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Granitic pegmatite),G3,Granitic pegmatite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-14,Katghora Outcrop BR-14 (Leucogranite),22.525,82.5512,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-15,Katghora Outcrop BR-15 (Leucogranite),22.5261,82.5546,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-16,Katghora Outcrop BR-16 (Leucogranite),22.5249,82.5533,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-17,Katghora Outcrop BR-17 (Leucogranite),22.5258,82.5567,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-18,Katghora Outcrop BR-18 (Leucogranite),22.5256,82.56,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-19,Katghora Outcrop BR-19 (Leucogranite),22.5249,82.5609,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-20,Katghora Outcrop BR-20 (Leucogranite),22.526,82.5633,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-21,Katghora Outcrop BR-21 (Leucogranite),22.5255,82.5654,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-22,Katghora Outcrop BR-22 (Leucogranite),22.5249,82.5686,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-23,Katghora Outcrop BR-23 (Leucogranite),22.5252,82.5704,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-24,Katghora Outcrop BR-24 (Leucogranite),22.5252,82.5728,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-25,Katghora Outcrop BR-25 (Leucogranite),22.5252,82.5747,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-26,Katghora Outcrop BR-26 (Leucogranite),22.5247,82.5764,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-27,Katghora Outcrop BR-27 (Leucogranite),22.5239,82.5512,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-28,Katghora Outcrop BR-28 (Leucogranite),22.523,82.5531,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-29,Katghora Outcrop BR-29 (Leucogranite),22.5236,82.5558,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-30,Katghora Outcrop BR-30 (Leucogranite),22.5239,82.5567,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-31,Katghora Outcrop BR-31 (Leucogranite),22.5241,82.56,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-32,Katghora Outcrop BR-32 (Leucogranite),22.5232,82.5611,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-33,Katghora Outcrop BR-33 (Leucogranite),22.524,82.5646,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-34,Katghora Outcrop BR-34 (Leucogranite),22.5239,82.5663,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-35,Katghora Outcrop BR-35 (Leucogranite),22.5241,82.5692,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-36,Katghora Outcrop BR-36 (Leucogranite),22.5236,82.5703,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-37,Katghora Outcrop BR-37 (Leucogranite),22.5228,82.5733,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-38,Katghora Outcrop BR-38 (Leucogranite),22.5223,82.5753,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-39,Katghora Outcrop BR-39 (Leucogranite),22.5231,82.5768,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-40,Katghora Outcrop BR-40 (Leucogranite),22.5221,82.5509,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-41,Katghora Outcrop BR-41 (Leucogranite),22.5215,82.5525,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-42,Katghora Outcrop BR-42 (Leucogranite),22.5214,82.5543,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-43,Katghora Outcrop BR-44 (Leucogranite),22.5206,82.5586,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-44,Katghora Outcrop BR-46 (Leucogranite),22.5217,82.5642,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-45,Katghora Outcrop BR-48 (Leucogranite),22.5209,82.5682,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-46,Katghora Outcrop BR-49 (Leucogranite),22.5206,82.5713,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-47,Katghora Outcrop BR-50 (Leucogranite),22.5201,82.5729,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-48,Katghora Outcrop BR-51 (Leucogranite),22.5214,82.5752,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-49,Katghora Outcrop BR-52 (Leucogranite),22.5214,82.5772,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-50,Katghora Outcrop BR-53 (Leucogranite),22.5194,82.5497,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-51,Katghora Outcrop BR-55 (Leucogranite),22.5194,82.5558,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-52,Katghora Outcrop BR-56 (Leucogranite),22.5194,82.5567,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-53,Katghora Outcrop BR-57 (Leucogranite),22.5194,82.5586,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-54,Katghora Outcrop BR-59 (Leucogranite),22.5193,82.5646,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-55,Katghora Outcrop BR-60 (Leucogranite),22.5181,82.5658,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-56,Katghora Outcrop BR-62 (Leucogranite),22.5186,82.5714,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-57,Katghora Outcrop BR-63 (Leucogranite),22.5191,82.5732,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-58,Katghora Outcrop BR-64 (Leucogranite),22.5186,82.5762,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-59,Katghora Outcrop BR-65 (Leucogranite),22.5192,82.5783,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-60,Katghora Outcrop BR-68 (Leucogranite),22.5167,82.5544,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-61,Katghora Outcrop BR-69 (Leucogranite),22.5168,82.5564,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-62,Katghora Outcrop BR-70 (Leucogranite),22.5156,82.5592,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-63,Katghora Outcrop BR-73 (Leucogranite),22.5167,82.5667,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-64,Katghora Outcrop BR-75 (Leucogranite),22.5167,82.5701,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-65,Katghora Outcrop BR-76 (Leucogranite),22.5167,82.5739,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-66,Katghora Outcrop BR-77 (Leucogranite),22.5172,82.5757,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-67,Katghora Outcrop BR-78 (Leucogranite),22.5164,82.5775,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-68,Katghora Outcrop BR-84 (Leucogranite),22.5148,82.5619,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-69,Katghora Outcrop BR-87 (Leucogranite),22.5144,82.5692,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-70,Katghora Outcrop BR-88 (Leucogranite),22.5134,82.5711,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-71,Katghora Outcrop BR-90 (Leucogranite),22.5149,82.5759,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-72,Katghora Outcrop BR-91 (Leucogranite),22.5153,82.5783,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-73,Katghora Outcrop BR-103 (Leucogranite),22.5128,82.5757,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-74,Katghora Outcrop CH-98 (Leucogranite),22.5228,82.5517,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-75,Katghora Outcrop CH-113A (Leucogranite),22.5206,82.5521,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-76,Katghora Outcrop CH-113B (Leucogranite),22.5206,82.5521,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-77,Katghora Outcrop CH-115 (Leucogranite),22.5221,82.5503,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-78,Katghora Outcrop CH-137 (Leucogranite),22.5226,82.5513,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-79,Katghora Outcrop CH-138 (Leucogranite),22.5226,82.5513,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+BRS-80,Katghora Outcrop CH-142 (Leucogranite),22.5226,82.5513,"Lepidolite, Spodumene, Albite, Quartz, Tourmaline",LCT Bedrock Sample (Leucogranite),G3,Leucogranite,Open,GSI CRO-23909-2022 Annexure-VI
+KRKC-01,Diamond Drillhole KRKC-01 (Collar),22.52625,82.551389,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-02,Diamond Drillhole KRKC-02 (Collar),22.52625,82.555275,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-03,Diamond Drillhole KRKC-03 (Collar),22.52625,82.559164,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-04,Diamond Drillhole KRKC-04 (Collar),22.52625,82.563053,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-05,Diamond Drillhole KRKC-05 (Collar),22.52625,82.566942,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-06,Diamond Drillhole KRKC-06 (Collar),22.522636,82.551389,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-07,Diamond Drillhole KRKC-07 (Collar),22.522636,82.555275,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-08,Diamond Drillhole KRKC-08 (Collar),22.522636,82.559164,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-09,Diamond Drillhole KRKC-09 (Collar),22.522636,82.563053,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-10,Diamond Drillhole KRKC-10 (Collar),22.522636,82.566942,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-11,Diamond Drillhole KRKC-11 (Collar),22.519022,82.551389,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-12,Diamond Drillhole KRKC-12 (Collar),22.519022,82.555275,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-13,Diamond Drillhole KRKC-13 (Collar),22.519022,82.559164,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-14,Diamond Drillhole KRKC-14 (Collar),22.519022,82.563053,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X
+KRKC-15,Diamond Drillhole KRKC-15 (Collar),22.519022,82.566942,"Spodumene, Lepidolite, Amblygonite, Columbite-Tantalite",Diamond Drill Hole Collar (Subsurface Validated),G3,Pegmatite/Granite,Open,GSI CRO-23909-2022 Annexure-IX/X

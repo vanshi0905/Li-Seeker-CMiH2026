@@ -1,0 +1,11 @@
+Occurrence_ID,Name,Latitude,Longitude,District,State,Minerals,Deposit_Type,UNFC_Stage,Host_Rock,Auction_Status,Area_Hectares
+KORB-01,Katghora Main Lithium-REE Block,22.5025,82.5428,Korba,Chhattisgarh,Lepidolite; Amblygonite; Monazite; Xenotime,LCT Complex (Lepidolite-subtype with REE),G3,Quartz-mica schist / Granite gneiss,"Auctioned (2024, Maiki South Mining)",256.12
+KORB-02,Garhatara Rare-Metal Prospect,22.528,82.561,Korba,Chhattisgarh,Lepidolite; Spodumene; Columbite-Tantalite,LCT (Lepidolite-Spodumene),G4,Biotite gneiss / Pelitic schist,GSI Reconnaissance,Regional Prospect
+KORB-03,Pali North Pegmatite Swarm,22.375,82.331,Korba,Chhattisgarh,Spodumene; Beryl; Tourmaline,LCT (Albite-Spodumene),G4,Granite contact aureole,GSI Reconnaissance,Regional Prospect
+KORB-04,Hardi Bazar Felsic Tract,22.312,82.458,Korba,Chhattisgarh,Lepidolite; Columbite; Muscovite,LCT (Mica-rich),G4,Chhotanagpur Gneiss,GSI Reconnaissance,Regional Prospect
+KORB-05,Pondi Uprora Lithium Pegmatite,22.684,82.612,Korba,Chhattisgarh,Lepidolite; Amblygonite; Beryl,LCT (Phosphate-rich),G4,Quartz-feldspar gneiss,GSI Reconnaissance,Regional Prospect
+KORB-06,Chaitma Rare-Element Pegmatite,22.589,82.492,Korba,Chhattisgarh,Spodumene; Muscovite; Columbite,LCT (Spodumene-subtype),G4,Metasediments,GSI Reconnaissance,Regional Prospect
+KORB-07,Dipka North Ridge Occurrence,22.355,82.525,Korba,Chhattisgarh,Lepidolite; Tourmaline; Apatite,LCT (B-rich greisenized),G4,Mica schist / Amphibolite,GSI Reconnaissance,Regional Prospect
+KORB-08,Tan River Basin Pegmatite,22.615,82.385,Korba,Chhattisgarh,Spodumene; Lepidolite; Cassiterite,LCT Complex,G4,Granite gneiss,GSI Reconnaissance,Regional Prospect
+KORB-09,Korba Granite Marginal Zone,22.42,82.68,Korba,Chhattisgarh,Columbite-Tantalite; Beryl; Monazite,NYF/LCT Hybrid (REE-enriched),G4,Peraluminous S-type granite,GSI Reconnaissance,Regional Prospect
+KORB-10,Kartala South Pegmatite Cluster,22.285,82.715,Korba,Chhattisgarh,Lepidolite; Amblygonite; Fluorite,LCT (Lepidolite-subtype),G4,Migmatite / Calc-granulite,GSI Reconnaissance,Regional Prospect

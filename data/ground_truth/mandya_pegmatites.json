@@ -1,0 +1,40 @@
+{
+  "district": "Mandya",
+  "state": "Karnataka",
+  "craton": "Western Dharwar Craton / Nagamangala Schist Belt",
+  "belt": "Marlagalla-Allapatna Pegmatite Belt",
+  "crs": "EPSG:4326",
+  "notes": "Explored by AMD; 1600 tonnes Li metal inferred reserve. In Cauvery agricultural plain with NDVI > 0.55 causing severe optical remote sensing occlusion.",
+  "occurrences": [
+    {
+      "id": "MAND-01",
+      "name": "Marlagalla Spodumene Body",
+      "latitude": 12.6611,
+      "longitude": 76.5458,
+      "minerals": ["Spodumene", "Columbite-Tantalite", "Beryl"],
+      "type": "LCT (Albite-Spodumene)",
+      "gsi_stage": "G3",
+      "host_rock": "Amphibolite schist"
+    },
+    {
+      "id": "MAND-02",
+      "name": "Allapatna Lithium Pegmatite",
+      "latitude": 12.6528,
+      "longitude": 76.5556,
+      "minerals": ["Spodumene", "Lepidolite", "Microlite"],
+      "type": "LCT Complex",
+      "gsi_stage": "G3",
+      "host_rock": "Nagamangala metabasite"
+    },
+    {
+      "id": "MAND-03",
+      "name": "Doddakadanahalli Occurrence",
+      "latitude": 12.6850,
+      "longitude": 76.5210,
+      "minerals": ["Spodumene", "Beryl"],
+      "type": "LCT Complex",
+      "gsi_stage": "G4",
+      "host_rock": "Peninsular Gneissic Complex"
+    }
+  ]
+}

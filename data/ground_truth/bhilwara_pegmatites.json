@@ -1,0 +1,159 @@
+{
+  "district": "Bhilwara",
+  "state": "Rajasthan",
+  "craton": "Aravalli Craton / Banded Gneissic Complex (BGC)",
+  "belt": "Bhilwara Pegmatite Belt (BPB)",
+  "crs": "EPSG:4326",
+  "occurrences": [
+    {
+      "id": "BHIL-01",
+      "name": "Mandal Pegmatite Swarm",
+      "latitude": 25.4430,
+      "longitude": 74.5710,
+      "minerals": ["Spodumene", "Lepidolite", "Beryl"],
+      "type": "LCT Complex (Albite-Spodumene)",
+      "gsi_stage": "G4",
+      "host_rock": "Mica schist / Mangalwar Complex"
+    },
+    {
+      "id": "BHIL-02",
+      "name": "Potlan Rare-Metal Pegmatite",
+      "latitude": 25.1380,
+      "longitude": 74.2230,
+      "minerals": ["Lepidolite", "Amblygonite", "Columbite-Tantalite"],
+      "type": "LCT (Lepidolite-subtype)",
+      "gsi_stage": "G3",
+      "host_rock": "Amphibolite / Calc-schist"
+    },
+    {
+      "id": "BHIL-03",
+      "name": "Karera Spodumene Belt",
+      "latitude": 25.5120,
+      "longitude": 74.3410,
+      "minerals": ["Spodumene", "Muscovite", "Tourmaline"],
+      "type": "LCT (Spodumene-subtype)",
+      "gsi_stage": "G4",
+      "host_rock": "Banded Gneissic Complex"
+    },
+    {
+      "id": "BHIL-04",
+      "name": "Asind Pegmatite Tract",
+      "latitude": 25.7330,
+      "longitude": 74.3280,
+      "minerals": ["Lepidolite", "Triphylite", "Beryl"],
+      "type": "LCT (Phosphate-rich)",
+      "gsi_stage": "G4",
+      "host_rock": "Pelitic schist / Gneiss"
+    },
+    {
+      "id": "BHIL-05",
+      "name": "Raipur Pegmatite Body",
+      "latitude": 25.3210,
+      "longitude": 74.1670,
+      "minerals": ["Lepidolite", "Spodumene", "Columbite"],
+      "type": "LCT Complex",
+      "gsi_stage": "G4",
+      "host_rock": "Granite gneiss contact"
+    },
+    {
+      "id": "BHIL-06",
+      "name": "Bhunas Mica-Lithium Mine",
+      "latitude": 25.2150,
+      "longitude": 74.3820,
+      "minerals": ["Lepidolite", "Beryl", "Muscovite"],
+      "type": "LCT (Mica-rich)",
+      "gsi_stage": "G3",
+      "host_rock": "Mica schist"
+    },
+    {
+      "id": "BHIL-07",
+      "name": "Danta Pegmatite Pit",
+      "latitude": 25.3400,
+      "longitude": 74.4500,
+      "minerals": ["Spodumene", "Lepidolite"],
+      "type": "LCT (Albite-Spodumene)",
+      "gsi_stage": "G4",
+      "host_rock": "Pelitic schist"
+    },
+    {
+      "id": "BHIL-08",
+      "name": "Deoria Lithium-Amblygonite Occurrence",
+      "latitude": 25.6100,
+      "longitude": 74.4850,
+      "minerals": ["Lepidolite", "Amblygonite"],
+      "type": "LCT (Lepidolite-subtype)",
+      "gsi_stage": "G4",
+      "host_rock": "Calc-silicate / Gneiss"
+    },
+    {
+      "id": "BHIL-09",
+      "name": "Banera Ridge Pegmatite Zone",
+      "latitude": 25.5050,
+      "longitude": 74.6800,
+      "minerals": ["Spodumene", "Columbite-Tantalite"],
+      "type": "LCT (Ta-enriched)",
+      "gsi_stage": "G4",
+      "host_rock": "Mangalwar metasediments"
+    },
+    {
+      "id": "BHIL-10",
+      "name": "Gangapur / Sahada Rare-Element Swarm",
+      "latitude": 25.2100,
+      "longitude": 74.2600,
+      "minerals": ["Lepidolite", "Beryl", "Tourmaline"],
+      "type": "LCT Complex",
+      "gsi_stage": "G4",
+      "host_rock": "Amphibolite facies gneiss"
+    },
+    {
+      "id": "BHIL-11",
+      "name": "Jamoli Pegmatite Group",
+      "latitude": 25.6550,
+      "longitude": 74.5200,
+      "minerals": ["Spodumene", "Quartz-feldspar", "Lepidolite"],
+      "type": "LCT (Spodumene-subtype)",
+      "gsi_stage": "G4",
+      "host_rock": "Mica schist"
+    },
+    {
+      "id": "BHIL-12",
+      "name": "Tiloli Pegmatite Cluster",
+      "latitude": 25.5800,
+      "longitude": 74.3900,
+      "minerals": ["Lepidolite", "Muscovite", "Beryl"],
+      "type": "LCT (Mica-rich)",
+      "gsi_stage": "G4",
+      "host_rock": "Migmatitic gneiss"
+    },
+    {
+      "id": "BHIL-13",
+      "name": "Meja Dam Ridge Pegmatite",
+      "latitude": 25.4100,
+      "longitude": 74.5200,
+      "minerals": ["Spodumene", "Tourmaline", "Mica"],
+      "type": "LCT (Albite-Spodumene)",
+      "gsi_stage": "G4",
+      "host_rock": "BGC metasediment"
+    },
+    {
+      "id": "BHIL-14",
+      "name": "Parasoli Amblygonite Prospect",
+      "latitude": 25.1800,
+      "longitude": 74.4200,
+      "minerals": ["Amblygonite", "Lepidolite"],
+      "type": "LCT (Phosphate-rich)",
+      "gsi_stage": "G4",
+      "host_rock": "Quartz-mica schist"
+    },
+    {
+      "id": "BHIL-15",
+      "name": "Mandalgarh Corridor Pegmatite",
+      "latitude": 25.2000,
+      "longitude": 74.9800,
+      "minerals": ["Spodumene", "Lepidolite", "Beryl"],
+      "type": "LCT Complex",
+      "gsi_stage": "G4",
+      "host_rock": "Great Boundary Fault zone splay"
+    }
+  ]
+}

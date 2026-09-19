@@ -1,0 +1,4 @@
+Occurrence_ID,Name,Latitude,Longitude,District,State,Minerals,Deposit_Type,UNFC_Stage,Host_Rock
+MAND-01,Marlagalla Spodumene Body,12.6611,76.5458,Mandya,Karnataka,Spodumene; Columbite-Tantalite; Beryl,LCT (Albite-Spodumene),G3,Amphibolite schist
+MAND-02,Allapatna Lithium Pegmatite,12.6528,76.5556,Mandya,Karnataka,Spodumene; Lepidolite; Microlite,LCT Complex,G3,Nagamangala metabasite
+MAND-03,Doddakadanahalli Occurrence,12.685,76.521,Mandya,Karnataka,Spodumene; Beryl,LCT Complex,G4,Peninsular Gneissic Complex

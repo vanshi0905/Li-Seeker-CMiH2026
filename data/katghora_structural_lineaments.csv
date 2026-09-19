@@ -1,0 +1,6 @@
+Fault_ID,Name,Start_Lat,Start_Lon,End_Lat,End_Lon,Trend,Geological_Significance
+FLT-KG-01,Katghora-Garhatara Regional Shear Corridor,22.28,82.28,22.72,82.72,NW-SE,Ductile-brittle shear zone controlling lepidolite pegmatite emplacement
+FLT-KG-02,Pali-Korba Cross Fault,22.35,82.25,22.35,82.75,E-W,Transverse fault accommodating syn-tectonic pegmatite dilation
+FLT-KG-03,Hasdeo River Structural Lineament,22.55,82.3,22.5,82.7,WNW-ESE,Deep basement fault zone channeling hydrothermal fluids
+FLT-KG-04,Pondi-Tan Boundary Fracture,22.65,82.35,22.7,82.65,NE-SW,CGC northern margin bounding structure
+FLT-KG-05,Central Pegmatite Axis Lineament,22.4,82.45,22.6,82.55,NNE-SSW,High-strain corridor directly intersecting Katghora auction block

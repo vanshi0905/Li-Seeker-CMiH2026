@@ -1,0 +1,56 @@
+Station_ID,Latitude,Longitude,Li_ppm,K_Rb_Ratio,Rb_ppm,Cs_ppm,Ta_ppm,Be_ppm,Sn_ppm,Sampling_Medium,Anomaly_Classification
+NGCM-KG-001,22.4448,82.69831,29.64,227.89,67.8,1.97,0.59,2.73,5.61,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-002,22.59155,82.28906,34.4,246.6,70.62,2.05,0.78,1.61,5.15,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-003,22.47006,82.40814,27.24,191.16,74.61,2.6,1.18,2.57,3.2,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-004,22.50626,82.54066,15.93,228.6,68.53,1.7,1.92,2.93,6.85,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-005,22.41403,82.32298,28.68,215.21,66.1,2.99,0.55,2.82,3.55,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-006,22.57151,82.41715,25.4,223.74,69.24,4.41,1.66,2.88,7.37,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-007,22.54308,82.68562,16.77,195.68,62.26,2.48,1.08,1.54,6.97,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-008,22.43697,82.40361,25.85,191.27,100.11,1.72,1.98,2.54,3.19,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-009,22.28243,82.6388,29.14,238.32,98.56,1.72,1.04,1.23,7.18,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-010,22.55425,82.4256,16.27,204.88,76.26,3.69,1.46,2.77,4.83,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-011,22.33262,82.59383,30.22,224.9,98.55,2.98,1.28,1.86,2.15,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-012,22.32747,82.29383,27.73,205.15,85.43,4.22,0.87,1.82,6.53,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-013,22.38067,82.31387,20.8,192.9,106.48,3.92,1.45,2.74,6.82,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-014,22.36209,82.67273,25.79,244.6,104.8,2.45,0.67,1.46,4.56,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-015,22.63993,82.65872,15.14,220.86,80.87,2.17,0.68,1.68,7.66,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-016,22.42221,82.50827,29.06,209.09,108.59,4.39,0.88,1.99,3.81,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-017,22.40533,82.29623,27.19,220.21,62.57,2.34,1.86,1.48,2.87,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-018,22.49536,82.71369,19.84,233.77,98.08,2.21,1.59,1.74,5.79,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-019,22.55875,82.51574,16.81,246.82,76.04,2.06,0.56,2.18,6.07,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-020,22.2873,82.50532,19.53,231.61,68.72,3.57,1.08,2.87,2.83,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-021,22.43007,82.32993,33.49,250.19,72.9,3.48,1.73,2.11,5.18,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-022,22.38642,82.32097,32.94,252.03,91.66,2.52,1.02,2.45,7.38,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-023,22.67032,82.62315,27.84,186.73,68.08,4.2,1.41,1.02,2.61,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-024,22.57194,82.28223,18.22,223.9,94.59,3.46,0.84,2.42,3.42,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-025,22.42318,82.60846,27.99,247.94,92.88,3.2,0.64,1.74,3.59,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-026,22.38736,82.70812,22.86,251.36,91.56,3.88,1.25,2.15,4.96,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-027,22.36591,82.59788,20.62,181.95,92.27,2.03,1.91,2.91,7.49,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-028,22.44287,82.2868,33.57,214.25,108.33,4.39,1.78,1.59,4.31,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-029,22.6545,82.41945,18.39,224.54,106.81,3.59,1.36,1.19,5.69,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-030,22.71562,82.34164,25.37,250.19,97.04,3.59,1.55,1.72,3.76,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-031,22.63612,82.63645,32.34,253.06,85.57,3.0,1.7,2.3,6.21,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-032,22.63015,82.6716,21.76,210.05,64.7,3.23,0.55,1.93,5.26,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-033,22.40608,82.53997,15.61,182.99,101.13,2.58,0.69,2.04,6.62,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-034,22.37496,82.55407,16.71,184.13,86.57,3.12,1.46,2.45,7.86,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-035,22.50717,82.4221,30.9,201.67,81.95,1.74,0.54,2.93,7.02,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-036,22.58623,82.45994,18.47,192.51,72.51,3.15,1.57,2.32,3.68,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-037,22.70014,82.60467,26.09,228.94,80.98,2.24,1.03,2.52,2.09,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-038,22.33107,82.30024,15.81,248.44,95.18,2.92,0.65,1.98,4.84,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-039,22.35621,82.47089,22.97,229.27,91.75,1.64,1.06,2.25,5.02,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-040,22.65686,82.56983,18.26,185.65,92.12,1.58,1.38,2.88,5.45,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-041,22.45079,82.56305,24.17,223.65,107.07,2.66,1.94,2.81,3.17,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-042,22.31052,82.32434,15.36,187.56,94.15,1.71,0.98,2.69,2.14,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-043,22.63837,82.40402,17.36,235.74,91.45,4.13,1.6,2.61,3.69,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-044,22.35807,82.61027,31.14,259.24,80.63,2.62,1.66,1.68,7.58,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-045,22.6577,82.46876,30.02,240.36,65.16,4.21,1.26,2.65,3.92,Stream Sediment (-80 mesh),Regional Crustal Background
+NGCM-KG-ANO-01,22.50883,82.54103,458.67,55.82,486.51,37.77,92.0,116.05,171.75,Stream Sediment (-80 mesh),First-Order Economic Lithium-REE Anomaly (Auctioned Block)
+NGCM-KG-ANO-02,22.53011,82.56018,224.51,58.15,354.5,23.54,38.12,50.53,30.93,Stream Sediment (-80 mesh),Highly Prospective Pegmatite Halo
+NGCM-KG-ANO-03,22.37491,82.32392,280.9,62.66,397.54,16.32,15.86,21.43,74.5,Stream Sediment (-80 mesh),Highly Prospective Pegmatite Halo
+NGCM-KG-ANO-04,22.31389,82.45162,178.5,73.04,234.55,24.79,35.31,18.66,30.51,Stream Sediment (-80 mesh),Highly Prospective Pegmatite Halo
+NGCM-KG-ANO-05,22.69179,82.60999,241.54,77.51,409.45,27.75,36.86,31.93,30.43,Stream Sediment (-80 mesh),Highly Prospective Pegmatite Halo
+NGCM-KG-ANO-06,22.59343,82.49293,253.33,81.25,242.24,18.87,12.37,36.09,28.66,Stream Sediment (-80 mesh),Highly Prospective Pegmatite Halo
+NGCM-KG-ANO-07,22.3489,82.51888,302.83,74.84,336.67,27.32,24.37,27.86,81.46,Stream Sediment (-80 mesh),Highly Prospective Pegmatite Halo
+NGCM-KG-ANO-08,22.61058,82.39241,162.67,83.8,228.63,26.04,29.41,59.68,29.8,Stream Sediment (-80 mesh),Highly Prospective Pegmatite Halo
+NGCM-KG-ANO-09,22.42086,82.68751,275.08,70.18,359.15,18.18,32.71,41.29,83.58,Stream Sediment (-80 mesh),Highly Prospective Pegmatite Halo
+NGCM-KG-ANO-10,22.27773,82.7115,369.09,80.61,311.13,21.16,21.15,23.47,55.14,Stream Sediment (-80 mesh),Highly Prospective Pegmatite Halo

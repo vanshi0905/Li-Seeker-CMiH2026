@@ -1,0 +1,465 @@
+{
+  "type": "FeatureCollection",
+  "name": "Katghora_Lithium_Exploration_Targets",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-01",
+        "rank": 1,
+        "tier": "Tier 1: High Priority Drill Target",
+        "mean_prospectivity": 0.9742,
+        "max_prospectivity": 0.9927,
+        "mean_uncertainty": 0.0166,
+        "confidence_score": 0.9581,
+        "area_km2": 3.14,
+        "borehole_validation_status": "Blind Discovery Target (Untested Subsurface)",
+        "calibrated_boreholes": [],
+        "peak_downhole_li_ppm": null,
+        "intercept_summary": "No historical G3 boreholes within search radius (New Exploration Asset)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.3799,
+              22.6219
+            ],
+            [
+              82.3951,
+              22.6219
+            ],
+            [
+              82.3951,
+              22.6052
+            ],
+            [
+              82.3799,
+              22.6052
+            ],
+            [
+              82.3799,
+              22.6219
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-02",
+        "rank": 2,
+        "tier": "Tier 1: High-Priority Drill Confirmed",
+        "mean_prospectivity": 0.9576,
+        "max_prospectivity": 0.994,
+        "mean_uncertainty": 0.0234,
+        "confidence_score": 0.9351,
+        "area_km2": 4.63,
+        "borehole_validation_status": "Field Validated - High-Grade Subsurface Intercept",
+        "calibrated_boreholes": [
+          "KRKC-11",
+          "KRKC-12"
+        ],
+        "peak_downhole_li_ppm": 1700.0,
+        "intercept_summary": "KRKC-11: 1700 ppm Li @ 39.5-40.0m (Leucogranite)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.5354,
+              22.5156
+            ],
+            [
+              82.5521,
+              22.5156
+            ],
+            [
+              82.5521,
+              22.4885
+            ],
+            [
+              82.5354,
+              22.4885
+            ],
+            [
+              82.5354,
+              22.5156
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-03",
+        "rank": 3,
+        "tier": "Tier 1: High Priority Drill Target",
+        "mean_prospectivity": 0.9549,
+        "max_prospectivity": 0.9939,
+        "mean_uncertainty": 0.0271,
+        "confidence_score": 0.9291,
+        "area_km2": 3.49,
+        "borehole_validation_status": "Blind Discovery Target (Untested Subsurface)",
+        "calibrated_boreholes": [],
+        "peak_downhole_li_ppm": null,
+        "intercept_summary": "No historical G3 boreholes within search radius (New Exploration Asset)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.3201,
+              22.3823
+            ],
+            [
+              82.3368,
+              22.3823
+            ],
+            [
+              82.3368,
+              22.3635
+            ],
+            [
+              82.3201,
+              22.3635
+            ],
+            [
+              82.3201,
+              22.3823
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-04",
+        "rank": 4,
+        "tier": "Tier 1: High Priority Drill Target",
+        "mean_prospectivity": 0.9549,
+        "max_prospectivity": 0.9941,
+        "mean_uncertainty": 0.0297,
+        "confidence_score": 0.9265,
+        "area_km2": 5.31,
+        "borehole_validation_status": "Blind Discovery Target (Untested Subsurface)",
+        "calibrated_boreholes": [],
+        "peak_downhole_li_ppm": null,
+        "intercept_summary": "No historical G3 boreholes within search radius (New Exploration Asset)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.4479,
+              22.324
+            ],
+            [
+              82.466,
+              22.324
+            ],
+            [
+              82.466,
+              22.301
+            ],
+            [
+              82.4479,
+              22.301
+            ],
+            [
+              82.4479,
+              22.324
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-05",
+        "rank": 5,
+        "tier": "Tier 1: High Priority Drill Target",
+        "mean_prospectivity": 0.923,
+        "max_prospectivity": 0.994,
+        "mean_uncertainty": 0.0563,
+        "confidence_score": 0.8711,
+        "area_km2": 7.42,
+        "borehole_validation_status": "Blind Discovery Target (Untested Subsurface)",
+        "calibrated_boreholes": [],
+        "peak_downhole_li_ppm": null,
+        "intercept_summary": "No historical G3 boreholes within search radius (New Exploration Asset)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.5076,
+              22.3635
+            ],
+            [
+              82.5326,
+              22.3635
+            ],
+            [
+              82.5326,
+              22.3385
+            ],
+            [
+              82.5076,
+              22.3385
+            ],
+            [
+              82.5076,
+              22.3635
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-06",
+        "rank": 6,
+        "tier": "Tier 2: Prospective Ground Check",
+        "mean_prospectivity": 0.9183,
+        "max_prospectivity": 0.9939,
+        "mean_uncertainty": 0.0544,
+        "confidence_score": 0.8683,
+        "area_km2": 3.53,
+        "borehole_validation_status": "Blind Discovery Target (Untested Subsurface)",
+        "calibrated_boreholes": [],
+        "peak_downhole_li_ppm": null,
+        "intercept_summary": "No historical G3 boreholes within search radius (New Exploration Asset)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.6035,
+              22.6969
+            ],
+            [
+              82.6188,
+              22.6969
+            ],
+            [
+              82.6188,
+              22.676
+            ],
+            [
+              82.6035,
+              22.676
+            ],
+            [
+              82.6035,
+              22.6969
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-07",
+        "rank": 7,
+        "tier": "Tier 2: Prospective Ground Check",
+        "mean_prospectivity": 0.911,
+        "max_prospectivity": 0.9939,
+        "mean_uncertainty": 0.0629,
+        "confidence_score": 0.8537,
+        "area_km2": 11.02,
+        "borehole_validation_status": "Blind Discovery Target (Untested Subsurface)",
+        "calibrated_boreholes": [],
+        "peak_downhole_li_ppm": null,
+        "intercept_summary": "No historical G3 boreholes within search radius (New Exploration Asset)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.6965,
+              22.301
+            ],
+            [
+              82.7313,
+              22.301
+            ],
+            [
+              82.7313,
+              22.2677
+            ],
+            [
+              82.6965,
+              22.2677
+            ],
+            [
+              82.6965,
+              22.301
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-08",
+        "rank": 8,
+        "tier": "Tier 2: Prospective Ground Check",
+        "mean_prospectivity": 0.9082,
+        "max_prospectivity": 0.9942,
+        "mean_uncertainty": 0.0613,
+        "confidence_score": 0.8526,
+        "area_km2": 7.09,
+        "borehole_validation_status": "Blind Discovery Target (Untested Subsurface)",
+        "calibrated_boreholes": [],
+        "peak_downhole_li_ppm": null,
+        "intercept_summary": "No historical G3 boreholes within search radius (New Exploration Asset)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.6729,
+              22.4323
+            ],
+            [
+              82.6979,
+              22.4323
+            ],
+            [
+              82.6979,
+              22.4073
+            ],
+            [
+              82.6729,
+              22.4073
+            ],
+            [
+              82.6729,
+              22.4323
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-09",
+        "rank": 9,
+        "tier": "Tier 2: Prospective Ground Check",
+        "mean_prospectivity": 0.9075,
+        "max_prospectivity": 0.9943,
+        "mean_uncertainty": 0.0697,
+        "confidence_score": 0.8442,
+        "area_km2": 5.21,
+        "borehole_validation_status": "Blind Discovery Target (Untested Subsurface)",
+        "calibrated_boreholes": [],
+        "peak_downhole_li_ppm": null,
+        "intercept_summary": "No historical G3 boreholes within search radius (New Exploration Asset)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.484,
+              22.6031
+            ],
+            [
+              82.5035,
+              22.6031
+            ],
+            [
+              82.5035,
+              22.5781
+            ],
+            [
+              82.484,
+              22.5781
+            ],
+            [
+              82.484,
+              22.6031
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "target_id": "TGT-10",
+        "rank": 10,
+        "tier": "Tier 1: High-Priority Drill Confirmed",
+        "mean_prospectivity": 0.8861,
+        "max_prospectivity": 0.9944,
+        "mean_uncertainty": 0.0823,
+        "confidence_score": 0.8131,
+        "area_km2": 15.08,
+        "borehole_validation_status": "Field Validated - High-Grade Subsurface Intercept",
+        "calibrated_boreholes": [
+          "KRKC-01",
+          "KRKC-02",
+          "KRKC-03",
+          "KRKC-04",
+          "KRKC-05",
+          "KRKC-06",
+          "KRKC-07",
+          "KRKC-08",
+          "KRKC-09",
+          "KRKC-10",
+          "KRKC-11",
+          "KRKC-12",
+          "KRKC-13",
+          "KRKC-14",
+          "KRKC-15"
+        ],
+        "peak_downhole_li_ppm": 1700.0,
+        "intercept_summary": "KRKC-11: 1700 ppm Li @ 39.5-40.0m (Leucogranite)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.5438,
+              22.551
+            ],
+            [
+              82.5882,
+              22.551
+            ],
+            [
+              82.5882,
+              22.5115
+            ],
+            [
+              82.5438,
+              22.5115
+            ],
+            [
+              82.5438,
+              22.551
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

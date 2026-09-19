@@ -1,0 +1,103 @@
+# ==============================================================================
+# Li-Seeker Geospatial & Machine Learning Pipeline - .gitignore
+# CMiH 2026 Problem Statement 01 (Lithium & REE Mineral Prospectivity Mapping)
+# ==============================================================================
+
+# Bytecode, Compiler & Runtime Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+output/test_*/
+
+# Virtual Environments & Packaging
+.env
+.venv/
+venv/
+ENV/
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE, Editor & OS Artifacts
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Agent Traces, Scratch Scripts & Logs
+.agents/
+*.log
+scratch/
+
+# Large External Raw Government Archives & Download Bundles (> 25 MB)
+# Note: Raw archives can be hosted on GitHub Releases (v1.0.0-data) or fetched via STAC / Bhukosh.
+Download/
+New folder/
+outputs/
+*.zip
+data/*.zip
+data/geochemical 2017/
+data/geochemical 2018/
+data/geochemical2019/
+data/geological/
+data/geophysical/
+data/lithium g3/
+data/lithium g4 2019/
+data/lithium g4 2021/
+output/output katghora.zip
+
+# Large Reference PDFs (Keep repo lean for GitHub)
+*.pdf
+
+# EXPLICIT INCLUSIONS: Retain Clean Cleaned Data, Ground Truth, Deliverables, and Documentation
+!data/*.csv
+!data/*.md
+!data/ground_truth/
+!data/ground_truth/**
+!data/sentinel_bands/
+!data/sentinel_bands/**
+
+# Deliverables in output/ and outputs/
+!output/
+!output/*.tif
+!output/*.geojson
+!output/*.json
+!output/*.csv
+!output/*.png
+!output/*.txt
+!outputs/
+!outputs/high_res_snapshots/
+!outputs/high_res_snapshots/**
