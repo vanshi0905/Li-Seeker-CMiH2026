@@ -14,6 +14,12 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 if CURRENT_DIR not in sys.path:
     sys.path.insert(0, CURRENT_DIR)
 
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(line_buffering=True)
+    except Exception:
+        pass
+
 import argparse
 from src.geospatial.synthetic_generator import (
     build_bhilwara_benchmark,
@@ -29,28 +35,36 @@ from src.evaluation.target_extractor import extract_prospective_targets
 from src.export.exporter import export_prospectivity_deliverables
 
 
-def run_pipeline(district: str = "katghora"):
+def run_pipeline(district: str = "katghora", fast: bool = False):
     district_clean = district.lower().strip()
     is_katghora = "katghora" in district_clean or "korba" in district_clean
 
     dist_name = "Katghora Block, Korba District, Chhattisgarh (CGC Margin)" if is_katghora else "Bhilwara District, Rajasthan (Aravalli Craton / BPB)"
 
-    print("=" * 75)
-    print("  LI-SEEKER: AI-POWERED MINERAL PROSPECTIVITY MAPPING (CMiH 2026)")
-    print("  Problem Statement 01: Lithium Pegmatite Prospectivity from Open Data")
-    print(f"  Target District: {dist_name}")
-    print("=" * 75)
+    print("=" * 75, flush=True)
+    print("  LI-SEEKER: AI-POWERED MINERAL PROSPECTIVITY MAPPING (CMiH 2026)", flush=True)
+    print("  Problem Statement 01: Lithium Pegmatite Prospectivity from Open Data", flush=True)
+    print(f"  Target District: {dist_name}", flush=True)
+    if fast:
+        print("  Mode: Rapid Evaluation (~10s smoke run on downsampled grid)", flush=True)
+    print("=" * 75, flush=True)
 
     start_time = time.time()
 
     # Step 1: Ingest Multi-Source Open Data & Synthesize District Stack
-    print("\n[Step 1/6] Ingesting Multi-Source Geospatial Stack...")
-    dataset = build_district_benchmark(district=district_clean, nrows=240, ncols=360, seed=42)
+    nrows = 60 if fast else 240
+    ncols = 90 if fast else 360
+    n_est_cv = 5 if fast else 15
+    n_est_prod = 10 if fast else 30
+    cv_blocks = 2 if fast else 3
+
+    print("\n[Step 1/6] Ingesting Multi-Source Geospatial Stack...", flush=True)
+    dataset = build_district_benchmark(district=district_clean, nrows=nrows, ncols=ncols, seed=42)
     grid = dataset['grid']
     occurrences = dataset.get('all_ground_truth') or dataset['occurrences']
-    print(f"  -> Bounding Box: Lat [{grid.min_lat:.2f}N to {grid.max_lat:.2f}N], Lon [{grid.min_lon:.2f}E to {grid.max_lon:.2f}E]")
-    print(f"  -> Grid Dimensions: {grid.nrows} rows x {grid.ncols} cols ({grid.nrows * grid.ncols:,} total pixels)")
-    print(f"  -> Loaded {len(occurrences)} documented pegmatite / critical mineral occurrences.")
+    print(f"  -> Bounding Box: Lat [{grid.min_lat:.2f}N to {grid.max_lat:.2f}N], Lon [{grid.min_lon:.2f}E to {grid.max_lon:.2f}E]", flush=True)
+    print(f"  -> Grid Dimensions: {grid.nrows} rows x {grid.ncols} cols ({grid.nrows * grid.ncols:,} total pixels)", flush=True)
+    print(f"  -> Loaded {len(occurrences)} documented pegmatite / critical mineral occurrences.", flush=True)
 
     # Step 2: Extract Remote Sensing Indices & Assemble Evidential Raster Stack
     print("\n[Step 2/6] Computing Spectral Indices & Assembling Evidential Stack...")
@@ -91,24 +105,24 @@ def run_pipeline(district: str = "katghora"):
     print(f"  -> Unlabeled Background Pixels: {len(X_unlabeled):,}")
 
     # Step 4: Train Bagging PU-XGBoost & Spatial Block Cross-Validation
-    print("\n[Step 4/6] Training Bagging PU-XGBoost & Running Spatial Block CV...")
+    print("\n[Step 4/6] Training Bagging PU-XGBoost & Running Spatial Block CV...", flush=True)
     cv_results = run_spatial_block_cv(
         X_pos, coords_pos, X_unlabeled, coords_unlabeled,
         min_lat=grid.min_lat, max_lat=grid.max_lat,
         min_lon=grid.min_lon, max_lon=grid.max_lon,
-        n_blocks_lat=3, n_blocks_lon=3, n_estimators=15
+        n_blocks_lat=cv_blocks, n_blocks_lon=cv_blocks, n_estimators=n_est_cv
     )
-    print(f"  -> Spatial Block Cross-Validation Mean ROC-AUC: {cv_results['mean_roc_auc']:.4f}")
-    print(f"  -> Spatial Block Cross-Validation Mean PR-AUC:  {cv_results['mean_pr_auc']:.4f}")
+    print(f"  -> Spatial Block Cross-Validation Mean ROC-AUC: {cv_results['mean_roc_auc']:.4f}", flush=True)
+    print(f"  -> Spatial Block Cross-Validation Mean PR-AUC:  {cv_results['mean_pr_auc']:.4f}", flush=True)
 
     # Fit final production ensemble on full dataset
-    miner = BaggingPUMiner(n_estimators=30, neg_pos_ratio=3.0, max_depth=4, random_state=42)
+    miner = BaggingPUMiner(n_estimators=n_est_prod, neg_pos_ratio=3.0, max_depth=4, random_state=42)
     miner.fit(X_pos, X_unlabeled)
     rankings_df = compute_feature_rankings(miner.feature_importances_, feat_names)
 
-    print("\n  Top 5 Evidential Feature Contributors:")
+    print("\n  Top 5 Evidential Feature Contributors:", flush=True)
     for _, row in rankings_df.head(5).iterrows():
-        print(f"    - {row['Feature']:<25}: {row['Percentage']:.2f}%")
+        print(f"    - {row['Feature']:<25}: {row['Percentage']:.2f}%", flush=True)
 
     # Step 5: Predict District-Wide Prospectivity & Evaluate Metrics
     print("\n[Step 5/6] Generating Full-District Heatmap, Epistemic Uncertainty & Exploration Metrics...")
@@ -178,6 +192,11 @@ if __name__ == "__main__":
         choices=["katghora", "bhilwara"],
         help="Exploration district to process (default: katghora)",
     )
+    parser.add_argument(
+        "--fast",
+        action="store_true",
+        help="Execute rapid evaluation on downsampled grid (~10s)",
+    )
     args = parser.parse_args()
-    run_pipeline(district=args.district)
+    run_pipeline(district=args.district, fast=args.fast)
 

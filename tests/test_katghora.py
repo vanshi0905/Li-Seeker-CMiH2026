@@ -72,14 +72,19 @@ def test_katghora_export_deliverables_integration(tmp_path):
 
     # Test output directory confinement: subfolder inside project output
     out_dir = os.path.join(os.path.dirname(__file__), '..', 'output', 'test_katghora_sub')
-    paths = export_prospectivity_deliverables(
-        prob_map, grid, pa_metrics, geojson, rankings_df, out_dir, district_prefix="katghora"
-    )
-    assert os.path.exists(paths["geotiff"])
-    assert "katghora" in paths["geotiff"]
-    assert os.path.exists(paths["geojson"])
-    assert "katghora" in paths["geojson"]
-    assert os.path.exists(paths["pa_plot_png"])
+    try:
+        paths = export_prospectivity_deliverables(
+            prob_map, grid, pa_metrics, geojson, rankings_df, out_dir, district_prefix="katghora"
+        )
+        assert os.path.exists(paths["geotiff"])
+        assert "katghora" in paths["geotiff"]
+        assert os.path.exists(paths["geojson"])
+        assert "katghora" in paths["geojson"]
+        assert os.path.exists(paths["pa_plot_png"])
+    finally:
+        import shutil
+        if os.path.exists(out_dir):
+            shutil.rmtree(out_dir, ignore_errors=True)
 
 
 def test_cmih2_folder_integrity():
