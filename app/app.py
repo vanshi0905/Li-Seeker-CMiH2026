@@ -228,10 +228,45 @@ def main():
     ])
 
     with tab_map:
-        # Build Folium Map
+        # Build Folium Map with Google Earth Satellite and Esri imagery (No API key watermarks)
         center_lat = (grid.min_lat + grid.max_lat) / 2.0
         center_lon = (grid.min_lon + grid.max_lon) / 2.0
-        m = folium.Map(location=[center_lat, center_lon], zoom_start=9, tiles="CartoDB positron")
+        m = folium.Map(location=[center_lat, center_lon], zoom_start=10, tiles=None)
+
+        # 1. Google Earth Satellite
+        folium.TileLayer(
+            tiles="https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+            attr="Google Earth Satellite Imagery",
+            name="Google Earth Satellite",
+            overlay=False,
+            control=True
+        ).add_to(m)
+
+        # 2. Google Earth Hybrid (Satellite + Road / Town Labels)
+        folium.TileLayer(
+            tiles="https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+            attr="Google Earth Hybrid",
+            name="Google Earth Hybrid",
+            overlay=False,
+            control=True
+        ).add_to(m)
+
+        # 3. Esri World Imagery (High-Res Global Satellite)
+        folium.TileLayer(
+            tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+            attr="Esri World Imagery",
+            name="Esri World Satellite",
+            overlay=False,
+            control=True
+        ).add_to(m)
+
+        # 4. OpenStreetMap (Clean Topographic / Base)
+        folium.TileLayer(
+            tiles="OpenStreetMap",
+            name="OpenStreetMap",
+            overlay=False,
+            control=True
+        ).add_to(m)
 
         # Overlay 1: Heatmap of high prospectivity
         if show_heatmap:
