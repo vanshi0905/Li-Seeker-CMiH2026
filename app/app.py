@@ -48,10 +48,16 @@ st.set_page_config(
 # Clean Light Mode Styling & Monospace Telemetry
 st.markdown("""
     <style>
-    /* Clean Light Mode Theme */
+    /* Clean Light Mode Canvas & Background */
     .stApp {
         background-color: #ffffff;
         color: #0f172a;
+    }
+
+    /* Top header bar */
+    header[data-testid="stHeader"] {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e2e8f0;
     }
 
     /* Sidebar blending */
@@ -59,10 +65,23 @@ st.markdown("""
         background-color: #f8fafc;
         border-right: 1px solid #e2e8f0;
     }
-    [data-testid="stSidebar"] hr {
-        border-color: #e2e8f0;
+    hr {
+        border-color: #e2e8f0 !important;
     }
     
+    /* Typography: Dark high-contrast headings and body text */
+    h1, h2, h3, h4, h5, h6, [data-testid="stHeadingWithActionElements"] {
+        color: #0f172a !important;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+    }
+    p, .stMarkdown p, .stMarkdown li {
+        color: #1e293b;
+    }
+    [data-testid="stCaptionContainer"] p, .stCaption {
+        color: #64748b !important;
+    }
+
     /* Header typography */
     .cockpit-title {
         font-size: 2.1rem;
@@ -116,6 +135,31 @@ st.markdown("""
         margin-top: 3px;
     }
 
+    /* Native st.metric card styling */
+    [data-testid="stMetric"] {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 10px 14px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    }
+    [data-testid="stMetricLabel"] p {
+        color: #64748b !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        letter-spacing: 0.06em;
+    }
+    [data-testid="stMetricValue"] div {
+        color: #0f172a !important;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        font-weight: 800;
+    }
+    [data-testid="stMetricDelta"] div {
+        font-size: 0.72rem;
+        color: #059669 !important;
+    }
+
     /* Badges */
     .badge-emerald {
         display: inline-block;
@@ -165,6 +209,7 @@ st.markdown("""
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
         border-bottom: 1px solid #e2e8f0;
+        background-color: transparent;
     }
     .stTabs [data-baseweb="tab"] {
         background-color: #f8fafc;
@@ -174,6 +219,11 @@ st.markdown("""
         color: #475569;
         font-weight: 600;
         padding: 8px 16px;
+        transition: all 0.15s ease-in-out;
+    }
+    .stTabs [data-baseweb="tab"]:hover {
+        color: #059669;
+        background-color: #f1f5f9;
     }
     .stTabs [aria-selected="true"] {
         background-color: #ffffff !important;
@@ -181,6 +231,41 @@ st.markdown("""
         border-top: 2px solid #059669 !important;
         border-left: 1px solid #e2e8f0 !important;
         border-right: 1px solid #e2e8f0 !important;
+        border-bottom: 1px solid #ffffff !important;
+    }
+    .stTabs [data-baseweb="tab-highlight"] {
+        background-color: #059669 !important;
+    }
+
+    /* Widgets, Expanders & Buttons */
+    [data-testid="stWidgetLabel"] label, [data-testid="stWidgetLabel"] p {
+        color: #0f172a !important;
+        font-weight: 600;
+    }
+    .stCheckbox label span {
+        color: #1e293b !important;
+    }
+    [data-testid="stExpander"] {
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+    }
+    [data-testid="stExpander"] summary {
+        color: #0f172a !important;
+        font-weight: 600;
+    }
+    .stButton > button, .stDownloadButton > button {
+        background-color: #ffffff;
+        color: #0f172a;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: all 0.15s ease-in-out;
+    }
+    .stButton > button:hover, .stDownloadButton > button:hover {
+        background-color: #f8fafc;
+        border-color: #059669;
+        color: #059669;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -380,7 +465,7 @@ def main():
     st.markdown("""
         <div class="cockpit-title">
             <span>⛏️ LithKhoj</span>
-            <span style="font-size: 1.25rem; font-weight: 500; color: #94a3b8;">|</span>
+            <span style="font-size: 1.25rem; font-weight: 500; color: #64748b;">|</span>
             <span style="font-size: 1.45rem; font-weight: 700; color: #0284c7;">Katghora Critical Mineral Exploration Cockpit</span>
         </div>
         <div class="cockpit-sub">
@@ -661,8 +746,8 @@ def main():
                 azimuth = float(r.get("azimuth_deg", 0.0))
                 inclination = float(r.get("inclination_deg", 90.0))
                 popup_html = f"""
-                <div style="font-family: Arial, sans-serif; min-width: 220px; color: #09090b;">
-                    <div style="font-size: 1rem; font-weight: 800; color: #1e3a8a; border-bottom: 2px solid #3b82f6; padding-bottom: 4px; margin-bottom: 6px;">
+                <div style="font-family: Arial, sans-serif; min-width: 220px; color: #0f172a;">
+                    <div style="font-size: 1rem; font-weight: 800; color: #1e3a8a; border-bottom: 2px solid #2563eb; padding-bottom: 4px; margin-bottom: 6px;">
                         💎 Borehole {bh_id}
                     </div>
                     <b>Block:</b> Katghora-Rampur G3<br>
@@ -671,7 +756,7 @@ def main():
                     <b>Elevation:</b> {rl:.2f} m RL<br>
                     <b>Drilling Rig:</b> {rig}<br>
                     <b>Coordinates:</b> {bh_lat:.5f}°N, {bh_lon:.5f}°E<br>
-                    <hr style="margin: 6px 0;">
+                    <hr style="margin: 6px 0; border: none; border-top: 1px solid #e2e8f0;">
                     <b>Assay Samples:</b> {n_samples} core intervals<br>
                     <b>Peak Li Grade:</b> <span style="color: #dc2626; font-weight: 700;">{peak_li:.1f} ppm</span><br>
                     <b>Mean Li Grade:</b> {mean_li:.1f} ppm<br>
@@ -694,8 +779,8 @@ def main():
             for occ in occurrences:
                 minerals_str = ", ".join(occ["minerals"])
                 occ_html = f"""
-                <div style="font-family: Arial, sans-serif; min-width: 200px; color: #09090b;">
-                    <div style="font-size: 0.95rem; font-weight: 800; color: #065f46; border-bottom: 2px solid #10b981; padding-bottom: 3px; margin-bottom: 5px;">
+                <div style="font-family: Arial, sans-serif; min-width: 200px; color: #0f172a;">
+                    <div style="font-size: 0.95rem; font-weight: 800; color: #065f46; border-bottom: 2px solid #059669; padding-bottom: 3px; margin-bottom: 5px;">
                         ⛏️ {occ['name']}
                     </div>
                     <b>Occurrence ID:</b> {occ['id']}<br>
@@ -724,7 +809,7 @@ def main():
                 b_id = r["sample_id"]
 
                 popup_brs = f"""
-                <div style="font-family: Arial, sans-serif; font-size: 0.85rem; color: #09090b;">
+                <div style="font-family: Arial, sans-serif; font-size: 0.85rem; color: #0f172a;">
                     <b>Sample:</b> {b_id}<br>
                     <b>Lithology:</b> {b_lith}<br>
                     <b>Li Grade:</b> {b_li:.1f} ppm<br>
@@ -953,6 +1038,7 @@ def main():
                 alt.hconcat(t1, t2, t3, t4)
                 .resolve_scale(y="shared")
                 .configure_view(stroke=None, fill="#ffffff")
+                .configure(background="#ffffff")
                 .configure_axis(
                     gridColor="#e2e8f0",
                     domainColor="#cbd5e1",
@@ -970,7 +1056,7 @@ def main():
                     titleColor="#334155"
                 )
             )
-            st.altair_chart(strip_chart, use_container_width=True)
+            st.altair_chart(strip_chart, use_container_width=True, theme=None)
 
             # Assay Data Table with Download
             with st.expander(f"📋 View Complete Geochemical Assays for {selected_bh} ({len(bh_assays)} Intervals)", expanded=False):
@@ -1057,6 +1143,7 @@ def main():
                     )
                 )
                 .configure_view(stroke=None, fill="#ffffff")
+                .configure(background="#ffffff")
                 .configure_axis(
                     gridColor="#e2e8f0",
                     domainColor="#cbd5e1",
@@ -1066,7 +1153,7 @@ def main():
                 )
             )
 
-            st.altair_chart(pa_chart, use_container_width=True)
+            st.altair_chart(pa_chart, use_container_width=True, theme=None)
             st.markdown("""
                 <div style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">
                     <b style="color: #059669;">— Deposit Prediction Rate (Pd)</b> &nbsp;|&nbsp; 
@@ -1097,6 +1184,7 @@ def main():
                     )
                 )
                 .configure_view(stroke=None, fill="#ffffff")
+                .configure(background="#ffffff")
                 .configure_axis(
                     gridColor="#e2e8f0",
                     domainColor="#cbd5e1",
@@ -1106,7 +1194,7 @@ def main():
                 )
             )
 
-            st.altair_chart(feat_chart, use_container_width=True)
+            st.altair_chart(feat_chart, use_container_width=True, theme=None)
             st.caption("Multi-modal fusion: Sentinel-2 LPI + NAGMP Aeromagnetics RTP + Fault Proximity + K-U-Th Radiometrics.")
 
         st.markdown("---")
