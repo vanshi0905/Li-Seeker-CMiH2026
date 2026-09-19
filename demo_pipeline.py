@@ -22,7 +22,6 @@ if hasattr(sys.stdout, "reconfigure"):
 
 import argparse
 from src.geospatial.synthetic_generator import (
-    build_bhilwara_benchmark,
     build_katghora_benchmark,
     build_district_benchmark,
 )

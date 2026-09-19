@@ -1,5 +1,5 @@
 # Master Geoscience References & Official Data Sources Dossier
-### Li-Seeker | Critical Minerals Innovation Hackathon (CMiH 2026) - Problem Statement 01
+### LithKhoj | Critical Minerals Innovation Hackathon (CMiH 2026) - Problem Statement 01
 **Target Block**: Katghora Lithium and REE Composite Block, Korba District, Chhattisgarh
 
 ---
@@ -91,12 +91,16 @@ All satellite layers in the Li-Seeker pipeline are retrieved via open, keyless S
 All raw, tabular, and processed spatial data files are stored in C:\Users\Asus\Desktop\CMIH\:
 
 * **data/katghora_occurrences.csv**: Full tabular occurrence records (ID, name, coordinates, minerals, stage, host rock, auction status, area).
+* **data/katghora_borehole_collars.csv**: 15 GSI diamond drill collars (KRKC-01 to KRKC-15) with UTM, geographic coordinates, elevation RL, azimuth, inclination, and rig specs.
+* **data/katghora_drill_core_assays.csv**: 453 downhole core assay intervals (0–45m depth) with Li ppm, Li₂O wt%, total REE ppm, and 28 ICP-MS trace elements.
+* **data/katghora_gsi_brs_samples.csv**: 80 GSI bedrock outcrop samples (BRS) with full geochemical assays.
 * **data/katghora_ngcm_geochemistry.csv**: 55 geochemical stream sediment stations across Korba with Li ppm, K/Rb, Rb, Cs, Ta, Be, Sn assays.
 * **data/katghora_structural_lineaments.csv**: Major shear zones and fault lineaments controlling pegmatite fluid conduits.
 * **data/katghora_granite_plutons.csv**: Parental S-type granitic plutons and fractionation classifications.
 * **data/ground_truth/katghora_pegmatites.json**: Official JSON ground-truth registry.
 * **output/katghora_lithium_prospectivity.tif**: 2D GeoTIFF prospectivity raster heatmap.
-* **output/katghora_drill_targets.geojson**: 11 delineated high-priority exploration target polygons.
-* **output/prospectivity_metrics.json**: Statistical metrics (AUSRC = 0.9948, Optimal Threshold = 0.9596, Capture = 100%).
-* **output/feature_rankings.csv**: All 19 evidential layers ranked by feature importance.
+* **output/katghora_uncertainty_map.tif**: Epistemic model prediction uncertainty GeoTIFF ($\sigma(x)$).
+* **output/katghora_drill_targets.geojson**: Ranked exploration target polygons with 3D drillhole calibration.
+* **output/prospectivity_metrics.json**: Statistical metrics (AUSRC = 0.9910, 44.67x exploration density gain).
+* **output/feature_rankings.csv**: All evidential layers ranked by Gini feature importance.
 * **output/prediction_area_plot.png**: High-resolution P-A plot chart.
