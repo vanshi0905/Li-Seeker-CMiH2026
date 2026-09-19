@@ -39,7 +39,7 @@ def run_pipeline(district: str = "katghora", fast: bool = False):
     district_clean = district.lower().strip()
     is_katghora = "katghora" in district_clean or "korba" in district_clean
 
-    dist_name = "Katghora Block, Korba District, Chhattisgarh (CGC Margin)" if is_katghora else "Bhilwara District, Rajasthan (Aravalli Craton / BPB)"
+    dist_name = "Katghora Block, Korba District, Chhattisgarh (CGC Margin)"
 
     print("=" * 75, flush=True)
     print("  LITHKHOJ: AI-POWERED MINERAL PROSPECTIVITY MAPPING (CMiH 2026)", flush=True)
@@ -189,7 +189,6 @@ if __name__ == "__main__":
         "--district",
         type=str,
         default="katghora",
-        choices=["katghora", "bhilwara"],
         help="Exploration district to process (default: katghora)",
     )
     parser.add_argument(

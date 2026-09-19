@@ -20,25 +20,17 @@
 
 ---
 
-## 🎯 Benchmark Target Districts
+## 🎯 Target Exploration Concession: Katghora Block, Korba District, Chhattisgarh
 
-### 1. Flagship Drill-Calibrated Benchmark: Katghora Block, Korba District, Chhattisgarh
-* **Geographic Extent**: Latitude 22°15' N – 22°45' N | Longitude 82°15' E – 82°45' E
-* **Geological Setting**: Chotanagpur Gneissic Complex (CGC) Southern Margin & Bilaspur-Raigarh Belt
-* **Target Minerals**: Spodumene, Lepidolite, Columbite-Tantalite, Amblygonite, REE-bearing pegmatites
-* **Ground Truth Training Asset**: **105 Field-Validated Points** (10 Regional Deposits + **80 GSI Bedrock Outcrop BRS Samples** with 28-element assays + **15 Diamond Drill Collars** calibrated against **453 downhole core assays** from 0–45m depth).
-* **Epistemic Predictive Uncertainty**: Integrated bag-variance uncertainty mapping ($\text{UQ} = \text{std}(p_i)$) with high-confidence target filtering ($\text{UQ} < 0.15$).
-
-### 2. Arid Remote Sensing Benchmark: Bhilwara District, Rajasthan
-* **Geographic Extent**: Latitude 25°03' N – 25°51' N | Longitude 74°03' E – 75°15' E
-* **Geological Setting**: Aravalli Craton / Banded Gneissic Complex (BGC) & Mangalwar Complex
-* **Target Belt**: **Bhilwara Pegmatite Belt (BPB)** — Mandal, Karera, Potlan, Asind, Bhunas, Raipur swarms
-* **Optimal Remote Sensing Terrain**: Semi-arid pediment with sparse xerophytic scrub; dry-season bedrock outcrops yield **$\text{NDVI} < 0.20$**, enabling Sentinel-2 SWIR bands (B11, B12) to detect diagnostic $\text{Al-OH}$ / Li-mica signatures with high signal-to-noise ratio.
-
-### Scientific Comparative Analysis with Other Indian Belts
-* **Mandya (Karnataka)**: While Mandya hosts the Marlagalla spodumene belt (1,600 tonnes Li metal inferred by AMD), it lies in the fertile Cauvery agricultural plain with continuous sugarcane/paddy cultivation ($\text{NDVI} > 0.55$), causing severe optical remote sensing occlusion.
-* **Bastar (Chhattisgarh)**: Covered by dense, moist-to-dry tropical Sal forests ($\text{NDVI} > 0.65$), preventing optical bedrock discrimination without SAR-optical fusion.
-* **Fundamental Distinction from Reasi (J&K)**: Reasi is a **sedimentary-diagenetic, paleo-lateritic / bauxite-clay hosted lithium deposit** where Li is bound in clay lattices (illite/halloysite), **NOT** an igneous pegmatite. PS-01 explicitly mandates pegmatite exploration; applying pegmatite petrogenetic models to Reasi creates physical and metallurgical mismatch.
+* **National Priority**: India's 1st Auctioned Critical Mineral Exploration Block (GSI G3 Stage).
+* **Geographic Extent**: Latitude 22°15' N – 22°45' N | Longitude 82°15' E – 82°45' E (UTM Zone 44N).
+* **Geological Setting**: Chotanagpur Gneissic Complex (CGC) Southern Margin & Bilaspur-Raigarh Metamorphic Belt.
+* **Target Minerals**: Spodumene, Lepidolite, Columbite-Tantalite, Amblygonite, and Associated REE-bearing Pegmatites.
+* **Ground Truth Training Asset**: **105 Field-Validated Points**:
+  - **10 Confirmed Pegmatite Deposits** (GSI Bhukosh records).
+  - **80 GSI Bedrock Outcrop BRS Samples** with full 28-element ICP-MS assays.
+  - **15 Diamond Drill Collars (KRKC-01 to KRKC-15)** calibrated against **453 downhole core assays** from 0–45m depth.
+* **Epistemic Predictive Uncertainty**: Integrated bag-variance uncertainty quantification ($\text{UQ} = \sigma(x)$) with high-confidence target filtering ($\text{UQ} < 0.15$).
 
 ---
 
@@ -83,17 +75,17 @@ In mineral exploration, unmapped ground is **unlabeled**, not confirmed barren n
 
 ---
 
-## 📊 Achieved Exploration KPIs
+## 📊 Achieved Exploration KPIs (Katghora Concession)
 
-| Exploration KPI | Katghora Benchmark | Bhilwara Benchmark | Evaluation Standard |
-| :--- | :---: | :---: | :--- |
-| **Area Under Success Rate Curve (AUSRC)** | **0.9910** | **0.9958** | Exceptional ($> 0.85$ standard) |
-| **Spatial Block CV Mean ROC-AUC** | **0.9557** | **0.9863** | Out-of-block generalizability |
-| **Spatial Block CV Mean PR-AUC** | **0.7733** | **0.8225** | Robust against extreme class imbalance |
-| **Deposit Capture Rate at Optimal Threshold** | **98.7%** | **100.0%** | All known deposits / GSI points captured |
-| **Prioritized Concession Area Required** | **2.2%** | **1.3%** | $> 97.8\%$ of barren land excluded |
-| **Normalized Exploration Density ($N_d$)** | **44.67x** | **78.31x** | Anomaly concentration vs background |
-| **Exploration Gain ($E_G$)** | **0.9648** | **0.9872** | Maximum risk reduction factor |
+| Exploration KPI | Katghora Performance | Evaluation Standard / Benchmark Impact |
+| :--- | :---: | :--- |
+| **Area Under Success Rate Curve (AUSRC)** | **0.9910 (99.1%)** | Exceptional ($> 0.85$ exploration standard) |
+| **Spatial Block CV Mean ROC-AUC** | **0.9557** | Rigorous out-of-block generalizability (no leakage) |
+| **Spatial Block CV Mean PR-AUC** | **0.7733** | Robust against extreme class imbalance ($< 0.1\%$ positives) |
+| **Deposit Capture Rate at Optimal Threshold** | **98.7%** | Captures confirmed GSI deposits and outcrop occurrences |
+| **Prioritized Concession Area Required** | **2.2%** | $> 97.8\%$ of barren gneissic host rock excluded |
+| **Normalized Exploration Density ($N_d$)** | **44.67x** | High anomaly concentration vs background ($N_d = P_d / P_a$) |
+| **Exploration Gain ($E_G$)** | **0.9648** | Maximum risk mitigation factor ($E_G = 1 - P_a / P_d$) |
 
 ---
 
@@ -108,20 +100,13 @@ pip install -r requirements.txt
 
 **Rapid Evaluation Mode (~5–10 seconds smoke test)**:
 ```powershell
-# Rapid smoke demo on Bhilwara District
-python demo_pipeline.py --fast --district bhilwara
-
-# Rapid smoke demo on Katghora District
-python demo_pipeline.py --fast --district katghora
+python demo_pipeline.py --fast
 ```
 
 **Full Production Resolution Mode**:
 ```powershell
 # Flagship drill-calibrated Katghora pipeline with uncertainty mapping
-python demo_pipeline.py --district katghora
-
-# Arid remote sensing Bhilwara pipeline
-python demo_pipeline.py --district bhilwara
+python demo_pipeline.py
 ```
 
 ### 3. Run Automated Pytest Suite
@@ -130,7 +115,7 @@ python -m pytest tests/ -v
 ```
 *Executes full 4-tier testing pyramid: Tier-1 unit features, Tier-2 boundary invariants, Tier-3 pairwise integrations, and Tier-4 real-world scenarios.*
 
-### 4. Launch Interactive Web GIS Dashboard
+### 4. Launch Interactive Web GIS Exploration Cockpit
 ```powershell
 streamlit run app/app.py
 ```
@@ -138,24 +123,23 @@ streamlit run app/app.py
 
 ---
 
-## 🗺️ Interactive Web GIS Features
-* **Multi-Layer Toggle**: Switch between Prospectivity Heatmap, Epistemic Uncertainty Map, GSI Known Deposits, Delineated Drill Targets, Al-OH Mica Index, and Aeromagnetic RTP lows.
-* **Dynamic Cutoff Slider**: Real-time recalculation of concession area, deposit recall, and exploration density.
-* **Ranked Drill Targets**: Tabular overview of Tier-1 and Tier-2 targets with centroid coordinates, area ($\text{km}^2$), mean prospectivity, and borehole intercept validation.
-* **Analytics Tab**: Prediction-Area (P-A) crossing point curve and Gini feature importance contributions.
-* **Export Center**: Direct download of GeoTIFF prospectivity rasters, GeoJSON targets, and metrics reports for QGIS/ArcGIS.
+## 🗺️ Web GIS Cockpit & Subsurface Inspector Features
+
+* **Full-Resolution Continuous Raster Overlays**: Renders high-resolution prospectivity models and epistemic uncertainty layers as seamless WebGL RGBA image overlays directly over Google Earth Satellite and Hybrid base maps (zero point-cloud DOM lag).
+* **Subsurface Drill Core Inspector Tab**: Select any of the 15 GSI diamond drillholes (`KRKC-01` to `KRKC-15`) to inspect collar metadata (coordinates, elevation, total depth 45m, azimuth, drilling rig) and interactive Altair 4-track downhole strip logs (Lithology stratigraphy, Li ppm grade, Li₂O wt%, and Total REE ppm).
+* **Interactive Prediction-Area (P-A) Curves**: Dynamic Altair P-A crossing curves showing the **44.67x exploration density gain** and **99.1% AUSRC**, interactively illustrating how the model reduces exploration risk.
+* **Prioritized G4/G3 Drill Target Delineation**: Delineates ranked concession targets with automated 3D borehole intercept calibration.
+* **Standard GIS Deliverables**: One-click download of compliant GeoJSON targets, GeoTIFF prospectivity maps, CSV collar coordinates, and 453 drill core assay records ready for QGIS or ArcGIS Pro.
 
 ---
 
 ## 📂 Deliverables Directory (`output/`)
-* `katghora_lithium_prospectivity.tif`: 32-bit floating point GeoTIFF prospectivity heatmap.
-* `katghora_uncertainty_map.tif`: Pixel-level epistemic predictive uncertainty GeoTIFF.
-* `katghora_drill_targets.geojson`: Ranked exploration targets with borehole assay calibration metadata.
-* `bhilwara_lithium_prospectivity.tif`: 32-bit floating point GeoTIFF for Bhilwara Pegmatite Belt.
-* `bhilwara_drill_targets.geojson`: Delineated targets for Bhilwara swarms.
-* `prediction_area_plot.png`: Publication-quality P-A crossing point plot.
-* `feature_rankings.csv`: Evidential layer contribution breakdown.
-* `prospectivity_metrics.json`: Quantitative exploration KPIs.
+* `katghora_lithium_prospectivity.tif`: 32-bit floating point GeoTIFF prospectivity model for Katghora Block.
+* `katghora_uncertainty_map.tif`: Pixel-level epistemic predictive uncertainty GeoTIFF ($\sigma(x)$).
+* `katghora_drill_targets.geojson`: Ranked exploration targets with 3D borehole assay calibration metadata.
+* `prediction_area_plot.png`: Publication-quality P-A crossing point plot showing 44.67x exploration gain.
+* `feature_rankings.csv`: Evidential layer contribution breakdown (Sentinel-2 LPI, NAGMP Aeromag, etc.).
+* `prospectivity_metrics.json`: Quantitative exploration KPIs (AUSRC = 0.9910, P-A crossing metrics).
 
 ---
 
