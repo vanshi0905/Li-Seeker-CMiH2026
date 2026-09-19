@@ -1,5 +1,5 @@
 """
-Li-Seeker: End-to-End Mineral Prospectivity Mapping Pipeline.
+LithKhoj: End-to-End Mineral Prospectivity Mapping Pipeline.
 Critical Minerals Innovation Hackathon (CMiH 2026) - Problem Statement 01.
 Host: JNARDDC / Ministry of Mines, Government of India.
 """
@@ -42,7 +42,7 @@ def run_pipeline(district: str = "katghora", fast: bool = False):
     dist_name = "Katghora Block, Korba District, Chhattisgarh (CGC Margin)" if is_katghora else "Bhilwara District, Rajasthan (Aravalli Craton / BPB)"
 
     print("=" * 75, flush=True)
-    print("  LI-SEEKER: AI-POWERED MINERAL PROSPECTIVITY MAPPING (CMiH 2026)", flush=True)
+    print("  LITHKHOJ: AI-POWERED MINERAL PROSPECTIVITY MAPPING (CMiH 2026)", flush=True)
     print("  Problem Statement 01: Lithium Pegmatite Prospectivity from Open Data", flush=True)
     print(f"  Target District: {dist_name}", flush=True)
     if fast:
@@ -184,7 +184,7 @@ def run_pipeline(district: str = "katghora", fast: bool = False):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Li-Seeker Mineral Prospectivity Mapping Pipeline")
+    parser = argparse.ArgumentParser(description="LithKhoj Mineral Prospectivity Mapping Pipeline")
     parser.add_argument(
         "--district",
         type=str,

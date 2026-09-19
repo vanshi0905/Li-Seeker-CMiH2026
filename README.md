@@ -1,6 +1,6 @@
-# Li-Seeker: AI-Powered Mineral Prospectivity Mapping for Lithium Pegmatites
+# LithKhoj: AI-Powered Mineral Prospectivity Mapping for Lithium Pegmatites
 
-[![CI](https://github.com/vanshi0905/Li-Seeker-CMiH2026/actions/workflows/ci.yml/badge.svg)](https://github.com/vanshi0905/Li-Seeker-CMiH2026/actions)
+[![CI](https://github.com/vanshi0905/LithKhoj-CMiH2026/actions/workflows/ci.yml/badge.svg)](https://github.com/vanshi0905/LithKhoj-CMiH2026/actions)
 ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.14-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/build-passing-brightgreen)
