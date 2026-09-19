@@ -45,13 +45,22 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Geospatial Dashboard Crafter: Dark Zinc/Slate Styling & Monospace Telemetry
+# Clean Light Mode Styling & Monospace Telemetry
 st.markdown("""
     <style>
-    /* Dark Command Center Theme */
+    /* Clean Light Mode Theme */
     .stApp {
-        background-color: #09090b;
-        color: #f4f4f5;
+        background-color: #ffffff;
+        color: #0f172a;
+    }
+
+    /* Sidebar blending */
+    [data-testid="stSidebar"] {
+        background-color: #f8fafc;
+        border-right: 1px solid #e2e8f0;
+    }
+    [data-testid="stSidebar"] hr {
+        border-color: #e2e8f0;
     }
     
     /* Header typography */
@@ -59,7 +68,7 @@ st.markdown("""
         font-size: 2.1rem;
         font-weight: 800;
         letter-spacing: -0.025em;
-        color: #f8fafc;
+        color: #0f172a;
         margin-bottom: 2px;
         display: flex;
         align-items: center;
@@ -67,30 +76,30 @@ st.markdown("""
     }
     .cockpit-sub {
         font-size: 0.95rem;
-        color: #94a3b8;
+        color: #64748b;
         margin-bottom: 16px;
     }
     
     /* Metric Telemetry Cards */
     .telemetry-card {
-        background: rgba(24, 24, 27, 0.90);
-        border: 1px solid #27272a;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
         border-radius: 8px;
         padding: 12px 14px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
     }
-    .telemetry-card-emerald { border-left: 4px solid #10b981; }
-    .telemetry-card-amber { border-left: 4px solid #f59e0b; }
-    .telemetry-card-cyan { border-left: 4px solid #06b6d4; }
-    .telemetry-card-crimson { border-left: 4px solid #ef4444; }
-    .telemetry-card-indigo { border-left: 4px solid #8b5cf6; }
+    .telemetry-card-emerald { border-left: 4px solid #059669; }
+    .telemetry-card-amber { border-left: 4px solid #d97706; }
+    .telemetry-card-cyan { border-left: 4px solid #2563eb; }
+    .telemetry-card-crimson { border-left: 4px solid #dc2626; }
+    .telemetry-card-indigo { border-left: 4px solid #4f46e5; }
 
     .telemetry-lbl {
         font-size: 0.72rem;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.06em;
-        color: #a1a1aa;
+        color: #64748b;
         margin-bottom: 4px;
     }
     .telemetry-val {
@@ -98,21 +107,21 @@ st.markdown("""
         font-variant-numeric: tabular-nums;
         font-size: 1.65rem;
         font-weight: 800;
-        color: #fafafa;
+        color: #0f172a;
         line-height: 1.1;
     }
     .telemetry-sub {
         font-size: 0.72rem;
-        color: #71717a;
+        color: #64748b;
         margin-top: 3px;
     }
 
     /* Badges */
     .badge-emerald {
         display: inline-block;
-        background: rgba(16, 185, 129, 0.15);
-        color: #10b981;
-        border: 1px solid rgba(16, 185, 129, 0.35);
+        background: rgba(5, 150, 105, 0.10);
+        color: #059669;
+        border: 1px solid rgba(5, 150, 105, 0.30);
         padding: 3px 9px;
         border-radius: 9999px;
         font-size: 0.72rem;
@@ -121,9 +130,9 @@ st.markdown("""
     }
     .badge-amber {
         display: inline-block;
-        background: rgba(245, 158, 11, 0.15);
-        color: #f59e0b;
-        border: 1px solid rgba(245, 158, 11, 0.35);
+        background: rgba(217, 119, 6, 0.10);
+        color: #d97706;
+        border: 1px solid rgba(217, 119, 6, 0.30);
         padding: 3px 9px;
         border-radius: 9999px;
         font-size: 0.72rem;
@@ -132,9 +141,9 @@ st.markdown("""
     }
     .badge-cyan {
         display: inline-block;
-        background: rgba(6, 182, 212, 0.15);
-        color: #06b6d4;
-        border: 1px solid rgba(6, 182, 212, 0.35);
+        background: rgba(37, 99, 235, 0.10);
+        color: #2563eb;
+        border: 1px solid rgba(37, 99, 235, 0.30);
         padding: 3px 9px;
         border-radius: 9999px;
         font-size: 0.72rem;
@@ -144,11 +153,34 @@ st.markdown("""
     
     /* Subsurface summary card */
     .collar-card {
-        background: #18181b;
-        border: 1px solid #27272a;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
         border-radius: 8px;
         padding: 12px 16px;
         margin-bottom: 12px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    /* Tabs Styling */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 8px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    .stTabs [data-baseweb="tab"] {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-bottom: none;
+        border-radius: 6px 6px 0 0;
+        color: #475569;
+        font-weight: 600;
+        padding: 8px 16px;
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: #ffffff !important;
+        color: #059669 !important;
+        border-top: 2px solid #059669 !important;
+        border-left: 1px solid #e2e8f0 !important;
+        border-right: 1px solid #e2e8f0 !important;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -349,7 +381,7 @@ def main():
         <div class="cockpit-title">
             <span>⛏️ LithKhoj</span>
             <span style="font-size: 1.25rem; font-weight: 500; color: #94a3b8;">|</span>
-            <span style="font-size: 1.45rem; font-weight: 700; color: #38bdf8;">Katghora Critical Mineral Exploration Cockpit</span>
+            <span style="font-size: 1.45rem; font-weight: 700; color: #0284c7;">Katghora Critical Mineral Exploration Cockpit</span>
         </div>
         <div class="cockpit-sub">
             Katghora Lithium-REE Exploration Block, Korba District, Chhattisgarh &bull; 
@@ -362,11 +394,11 @@ def main():
     # Sidebar: Locked to Katghora Block (Korba, Chhattisgarh)
     with st.sidebar:
         st.markdown("""
-            <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid #10b981; border-radius: 8px; padding: 12px; margin-bottom: 15px;">
-                <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #10b981; font-weight: 800;">Target Concession</div>
-                <div style="font-size: 1.2rem; font-weight: 800; color: #f8fafc; margin-top: 2px;">Katghora Block</div>
-                <div style="font-size: 0.82rem; color: #94a3b8;">Korba District, Chhattisgarh</div>
-                <div style="font-size: 0.75rem; color: #f59e0b; margin-top: 6px; font-weight: 600;">★ India's 1st Auctioned Critical Mineral Block</div>
+            <div style="background: rgba(5, 150, 105, 0.08); border: 1px solid #059669; border-radius: 8px; padding: 12px; margin-bottom: 15px;">
+                <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #059669; font-weight: 800;">Target Concession</div>
+                <div style="font-size: 1.2rem; font-weight: 800; color: #0f172a; margin-top: 2px;">Katghora Block</div>
+                <div style="font-size: 0.82rem; color: #64748b;">Korba District, Chhattisgarh</div>
+                <div style="font-size: 0.75rem; color: #d97706; margin-top: 6px; font-weight: 600;">★ India's 1st Auctioned Critical Mineral Block</div>
             </div>
         """, unsafe_allow_html=True)
 
@@ -395,7 +427,7 @@ def main():
 
         st.markdown("---")
         st.markdown("""
-            <div style="font-size: 0.78rem; color: #71717a;">
+            <div style="font-size: 0.78rem; color: #64748b;">
                 <b>Host Institution</b>: JNARDDC, Nagpur<br>
                 <b>Aegis</b>: Ministry of Mines, GoI<br>
                 <b>Engine</b>: Positive-Unlabeled XGBoost
@@ -417,7 +449,7 @@ def main():
     deposit_capture_pct = (captured_deposits / len(occurrences)) * 100.0 if occurrences else 0.0
     exploration_density = deposit_capture_pct / max(concession_area_pct, 0.01)
 
-    # Top KPI Telemetry Banner (Dark Slate Command Center)
+    # Top KPI Telemetry Banner (Light Command Center)
     k1, k2, k3, k4, k5 = st.columns(5)
     with k1:
         st.markdown(f"""
@@ -796,10 +828,10 @@ def main():
                 st.markdown(f"""
                     <div class="collar-card">
                         <div class="telemetry-lbl">Collar Location</div>
-                        <div style="font-family: monospace; font-size: 1.05rem; font-weight: 700; color: #f8fafc;">
+                        <div style="font-family: monospace; font-size: 1.05rem; font-weight: 700; color: #0f172a;">
                             {bh_collar['latitude']:.5f}° N<br>{bh_collar['longitude']:.5f}° E
                         </div>
-                        <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 2px;">RL: {bh_collar['collar_rl_m']:.1f} m</div>
+                        <div style="font-size: 0.72rem; color: #64748b; margin-top: 2px;">RL: {bh_collar['collar_rl_m']:.1f} m</div>
                     </div>
                 """, unsafe_allow_html=True)
             with c_card2:
@@ -808,11 +840,11 @@ def main():
                 st.markdown(f"""
                     <div class="collar-card">
                         <div class="telemetry-lbl">Borehole Specs</div>
-                        <div style="font-family: monospace; font-size: 0.95rem; font-weight: 700; color: #f8fafc; line-height: 1.35;">
+                        <div style="font-family: monospace; font-size: 0.95rem; font-weight: 700; color: #0f172a; line-height: 1.35;">
                             Depth: {bh_collar['total_depth_m']:.0f} m &bull; Azimuth: {azimuth_val:.0f}°<br>
                             Dip: {inc_val:.0f}° (Vert) &bull; Rig: {bh_collar['drilling_rig']}
                         </div>
-                        <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 3px;">Date: {bh_collar.get('initiated_date', '')} &rarr; {bh_collar.get('completed_date', '')}</div>
+                        <div style="font-size: 0.72rem; color: #64748b; margin-top: 3px;">Date: {bh_collar.get('initiated_date', '')} &rarr; {bh_collar.get('completed_date', '')}</div>
                     </div>
                 """, unsafe_allow_html=True)
             with c_card3:
@@ -821,10 +853,10 @@ def main():
                 st.markdown(f"""
                     <div class="collar-card">
                         <div class="telemetry-lbl">Peak Lithium Intercept</div>
-                        <div style="font-family: monospace; font-size: 1.25rem; font-weight: 800; color: #ef4444;">
+                        <div style="font-family: monospace; font-size: 1.25rem; font-weight: 800; color: #dc2626;">
                             {peak_li:.0f} ppm
                         </div>
-                        <div style="font-size: 0.75rem; color: #f59e0b; font-weight: 600;">{peak_li2o:.3f}% Li₂O eq.</div>
+                        <div style="font-size: 0.75rem; color: #d97706; font-weight: 600;">{peak_li2o:.3f}% Li₂O eq.</div>
                     </div>
                 """, unsafe_allow_html=True)
             with c_card4:
@@ -833,10 +865,10 @@ def main():
                 st.markdown(f"""
                     <div class="collar-card">
                         <div class="telemetry-lbl">Weighted Mean Grade</div>
-                        <div style="font-family: monospace; font-size: 1.25rem; font-weight: 800; color: #10b981;">
+                        <div style="font-family: monospace; font-size: 1.25rem; font-weight: 800; color: #059669;">
                             {mean_li:.1f} ppm Li
                         </div>
-                        <div style="font-size: 0.72rem; color: #8b5cf6;">Total REE: {mean_ree:.1f} ppm</div>
+                        <div style="font-size: 0.72rem; color: #7c3aed;">Total REE: {mean_ree:.1f} ppm</div>
                     </div>
                 """, unsafe_allow_html=True)
             with c_card5:
@@ -845,10 +877,10 @@ def main():
                 st.markdown(f"""
                     <div class="collar-card">
                         <div class="telemetry-lbl">Intercepts ≥ Cutoff</div>
-                        <div style="font-family: monospace; font-size: 1.25rem; font-weight: 800; color: #f59e0b;">
+                        <div style="font-family: monospace; font-size: 1.25rem; font-weight: 800; color: #d97706;">
                             {len(ore_intervals)} intervals
                         </div>
-                        <div style="font-size: 0.72rem; color: #10b981;">{ore_thickness:.1f} m Net Thickness</div>
+                        <div style="font-size: 0.72rem; color: #059669;">{ore_thickness:.1f} m Net Thickness</div>
                     </div>
                 """, unsafe_allow_html=True)
 
@@ -879,7 +911,7 @@ def main():
             t2_base = alt.Chart(bh_assays).encode(
                 y=alt.Y("mid_depth:Q", scale=y_scale, title="")
             )
-            t2_line = t2_base.mark_line(color="#10b981", strokeWidth=2.5).encode(
+            t2_line = t2_base.mark_line(color="#059669", strokeWidth=2.5).encode(
                 x=alt.X("li_ppm:Q", title="Li Grade (ppm)"),
                 tooltip=["sample_id", "from_m", "to_m", "lithology", "li_ppm"]
             )
@@ -887,13 +919,13 @@ def main():
                 x="li_ppm:Q",
                 color=alt.condition(
                     f"datum.li_ppm >= {cutoff_grade}",
-                    alt.value("#ef4444"),
-                    alt.value("#10b981")
+                    alt.value("#dc2626"),
+                    alt.value("#059669")
                 ),
                 tooltip=["sample_id", "from_m", "to_m", "lithology", "li_ppm"]
             )
             t2_cutoff = alt.Chart(pd.DataFrame({"cutoff": [cutoff_grade]})).mark_rule(
-                color="#ef4444",
+                color="#dc2626",
                 strokeDash=[5, 5],
                 strokeWidth=2
             ).encode(x="cutoff:Q")
@@ -903,21 +935,41 @@ def main():
             )
 
             # Track 3: Lithium Oxide Profile (Li2O wt%)
-            t3 = alt.Chart(bh_assays).mark_line(point=True, color="#f59e0b", strokeWidth=2).encode(
+            t3 = alt.Chart(bh_assays).mark_line(point=True, color="#d97706", strokeWidth=2).encode(
                 y=alt.Y("mid_depth:Q", scale=y_scale, title=""),
                 x=alt.X("li2o_wt_pct:Q", title="Li₂O (wt%)", axis=alt.Axis(format=".3f")),
                 tooltip=["sample_id", "from_m", "to_m", "lithology", alt.Tooltip("li2o_wt_pct:Q", format=".4f")]
             ).properties(width=190, height=480, title="Li₂O Oxide Grade (%)")
 
             # Track 4: Total REE Profile (Total REE ppm)
-            t4 = alt.Chart(bh_assays).mark_line(point=True, color="#8b5cf6", strokeWidth=2).encode(
+            t4 = alt.Chart(bh_assays).mark_line(point=True, color="#7c3aed", strokeWidth=2).encode(
                 y=alt.Y("mid_depth:Q", scale=y_scale, title=""),
                 x=alt.X("total_ree_ppm:Q", title="Total REE (ppm)"),
                 tooltip=["sample_id", "from_m", "to_m", "lithology", "total_ree_ppm", "la_ppm", "ce_ppm", "nd_ppm"]
             ).properties(width=190, height=480, title="Total Rare Earths (ppm)")
 
-            # Combine tracks into single synchronized strip log
-            strip_chart = alt.hconcat(t1, t2, t3, t4).resolve_scale(y="shared")
+            # Combine tracks into single synchronized strip log with clean light theme
+            strip_chart = (
+                alt.hconcat(t1, t2, t3, t4)
+                .resolve_scale(y="shared")
+                .configure_view(stroke=None, fill="#ffffff")
+                .configure_axis(
+                    gridColor="#e2e8f0",
+                    domainColor="#cbd5e1",
+                    tickColor="#cbd5e1",
+                    labelColor="#334155",
+                    titleColor="#334155"
+                )
+                .configure_title(
+                    color="#0f172a",
+                    fontSize=13,
+                    fontWeight=700
+                )
+                .configure_legend(
+                    labelColor="#334155",
+                    titleColor="#334155"
+                )
+            )
             st.altair_chart(strip_chart, use_container_width=True)
 
             # Assay Data Table with Download
@@ -959,7 +1011,7 @@ def main():
             )
 
             # Curve 1: Deposit Capture Rate Pd (Emerald)
-            line_pd = base_pa.mark_line(color="#10b981", strokeWidth=3).encode(
+            line_pd = base_pa.mark_line(color="#059669", strokeWidth=3).encode(
                 y=alt.Y("deposit_capture_pct:Q", title="Percentage (%)", scale=alt.Scale(domain=[0, 105])),
                 tooltip=[
                     alt.Tooltip("area_pct:Q", title="Concession Area (%)", format=".1f"),
@@ -968,7 +1020,7 @@ def main():
             )
 
             # Curve 2: 100% - Area (100 - Pa) (Amber dashed)
-            line_pa = base_pa.mark_line(color="#f59e0b", strokeDash=[6, 4], strokeWidth=2.5).encode(
+            line_pa = base_pa.mark_line(color="#d97706", strokeDash=[6, 4], strokeWidth=2.5).encode(
                 y=alt.Y("inv_area_pct:Q"),
                 tooltip=[
                     alt.Tooltip("area_pct:Q", title="Concession Area (%)", format=".1f"),
@@ -982,7 +1034,7 @@ def main():
                 "capture_pct": cross["deposit_capture_percentage"],
                 "label": f"Optimal Crossing Point (Threshold = {opt_th:.2f})"
             }])
-            point_cross = alt.Chart(cross_df).mark_circle(color="#ef4444", size=150).encode(
+            point_cross = alt.Chart(cross_df).mark_circle(color="#dc2626", size=150).encode(
                 x="area_pct:Q",
                 y="capture_pct:Q",
                 tooltip=[
@@ -992,23 +1044,34 @@ def main():
                 ]
             )
 
-            pa_chart = (line_pd + line_pa + point_cross).properties(
-                width=550,
-                height=380,
-                title=alt.TitleParams(
-                    text="Prediction-Area (P-A) Success Rate Curve | Katghora Block",
-                    subtitle=f"44.67x Exploration Density Gain (Nd) • 99.1% Model AUSRC • Optimal Cutoff {opt_th:.2f}",
-                    color="#f8fafc",
-                    subtitleColor="#94a3b8"
+            pa_chart = (
+                (line_pd + line_pa + point_cross)
+                .properties(
+                    width=550,
+                    height=380,
+                    title=alt.TitleParams(
+                        text="Prediction-Area (P-A) Success Rate Curve | Katghora Block",
+                        subtitle=f"44.67x Exploration Density Gain (Nd) • 99.1% Model AUSRC • Optimal Cutoff {opt_th:.2f}",
+                        color="#0f172a",
+                        subtitleColor="#64748b"
+                    )
+                )
+                .configure_view(stroke=None, fill="#ffffff")
+                .configure_axis(
+                    gridColor="#e2e8f0",
+                    domainColor="#cbd5e1",
+                    tickColor="#cbd5e1",
+                    labelColor="#334155",
+                    titleColor="#334155"
                 )
             )
 
             st.altair_chart(pa_chart, use_container_width=True)
             st.markdown("""
-                <div style="font-size: 0.82rem; color: #94a3b8; margin-top: 4px;">
-                    <b style="color: #10b981;">— Deposit Prediction Rate (Pd)</b> &nbsp;|&nbsp; 
-                    <b style="color: #f59e0b;">- - 100% - Area (100-Pa)</b> &nbsp;|&nbsp; 
-                    <b style="color: #ef4444;">● Scientific Crossing Point</b><br>
+                <div style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">
+                    <b style="color: #059669;">— Deposit Prediction Rate (Pd)</b> &nbsp;|&nbsp; 
+                    <b style="color: #d97706;">- - 100% - Area (100-Pa)</b> &nbsp;|&nbsp; 
+                    <b style="color: #dc2626;">● Scientific Crossing Point</b><br>
                     <i>The intersection mathematically delineates the threshold that maximizes deposit capture while minimizing exploration ground footprint.</i>
                 </div>
             """, unsafe_allow_html=True)
@@ -1017,11 +1080,31 @@ def main():
             st.markdown("#### 🧬 Evidential Layer Importance (Gini)")
             top_features = rankings_df.head(10).copy()
 
-            feat_chart = alt.Chart(top_features).mark_bar(color="#3b82f6", cornerRadiusEnd=4).encode(
-                x=alt.X("Percentage:Q", title="Feature Contribution (%)"),
-                y=alt.Y("Feature:N", sort="-x", title="Evidential Layer"),
-                tooltip=["Feature", alt.Tooltip("Percentage:Q", format=".2f")]
-            ).properties(width=450, height=380, title="Top Evidential Predictors")
+            feat_chart = (
+                alt.Chart(top_features)
+                .mark_bar(color="#2563eb", cornerRadiusEnd=4)
+                .encode(
+                    x=alt.X("Percentage:Q", title="Feature Contribution (%)"),
+                    y=alt.Y("Feature:N", sort="-x", title="Evidential Layer"),
+                    tooltip=["Feature", alt.Tooltip("Percentage:Q", format=".2f")]
+                )
+                .properties(
+                    width=450,
+                    height=380,
+                    title=alt.TitleParams(
+                        text="Top Evidential Predictors",
+                        color="#0f172a"
+                    )
+                )
+                .configure_view(stroke=None, fill="#ffffff")
+                .configure_axis(
+                    gridColor="#e2e8f0",
+                    domainColor="#cbd5e1",
+                    tickColor="#cbd5e1",
+                    labelColor="#334155",
+                    titleColor="#334155"
+                )
+            )
 
             st.altair_chart(feat_chart, use_container_width=True)
             st.caption("Multi-modal fusion: Sentinel-2 LPI + NAGMP Aeromagnetics RTP + Fault Proximity + K-U-Th Radiometrics.")
